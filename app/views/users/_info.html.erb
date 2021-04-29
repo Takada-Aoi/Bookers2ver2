@@ -1,0 +1,13 @@
+<h1>User info</h1>
+<div><%=attachment_image_tag user,:profile_image,:fill,60,60 %></div>
+<table>
+  <tboby>
+    <tr></tr>
+    <th>name</th><br>
+    <th><%= user.name%></th><br>
+    <th>introduction</th><br>
+    <th><%= user.introduction%></th>
+  </tboby>
+</table>
+
+<div><%=link_to "edit",edit_user_path(user.id)%></div>
